@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "a.h"
 #define MAXNUM 100
 
 
 int ReadNum(int rows[])
 {
+    printf("testttt");
     int i = 0;
     int num;
     while (i < MAXNUM && scanf("%d",&num) && num > 0 ) {
