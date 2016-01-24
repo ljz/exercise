@@ -1,0 +1,1 @@
+int Start_example1(void);
