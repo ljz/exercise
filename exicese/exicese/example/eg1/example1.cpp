@@ -20,7 +20,6 @@ int ReadNum(int rows[])
     while ((ch = getchar()) && ch != EOF && ch !='\n') {//清除负数后面的那些内容,getchar()如何判断是不是会车
         printf("\n清除负数后面的那些内容%d\n",ch);
     }
-    printf("\n返回了i ＝ %d\n",i);
     return i;
 }
 
@@ -53,7 +52,8 @@ int Start_example1(void) {
     printf("请输入需要读入的列数据");
     int num=0;
     num = ReadNum(rows);//nnd，中文和英文的等号都不能混用
-    while (gets(input)) {
+    printf("Start string you want to rearrange\n");
+    while (fgets(input, MAXNUM, stdin)) {
         Rearrange(output, input, rows, num);
         printf("%s",output);
     }
